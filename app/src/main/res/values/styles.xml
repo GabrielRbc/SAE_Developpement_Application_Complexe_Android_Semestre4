@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/noir</item>
+        <item name="android:textSize">@dimen/VingtCinqSP</item>
+    </style>
+
+    <style name="BaseCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/blanc</item>
+        <item name="android:elevation">@dimen/DeuxDP</item>
+    </style>
+
+    <style name="BaseButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/SoixanteDP</item>
+        <item name="android:textSize">@dimen/QuinzeSP</item>
+        <item name="android:backgroundTint">@color/blanc</item>
+        <item name="android:textColor">@color/noir</item>
+    </style>
+
+    <style name="PageTitle" parent="BaseTitle">
+        <item name="android:textSize">@dimen/VingtQuatreSP</item>
+        <item name="android:layout_marginTop">@dimen/QuatreVingtDP</item>
+    </style>
+
+    <style name="MenuTitle" parent="BaseTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/QuarenteDP</item>
+    </style>
+
+    <style name="MenuInstruction" parent="BaseTitle">
+        <item name="android:textSize">@dimen/QuinzeSP</item>
+        <item name="android:layout_marginTop">@dimen/VingtQuatreDP</item>
+    </style>
+
+    <style name="LoginCard" parent="BaseCard">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/TrenteDeuxDP</item>
+        <item name="android:elevation">@dimen/QuatreDP</item>
+    </style>
+
+    <style name="FilterContainer" parent="BaseCard">
+        <item name="android:padding">@dimen/HuitDP</item>
+        <item name="android:layout_marginTop">@dimen/VingtQuatreDP</item>
+    </style>
+
+    <style name="MessageCard" parent="BaseCard">
+        <item name="android:elevation">@dimen/TroisDP</item>
+        <item name="android:padding">@dimen/DouzeDP</item>
+        <item name="android:layout_marginTop">@dimen/VingtQuatreDP</item>
+    </style>
+
+    <style name="AppCard" parent="BaseCard">
+        <item name="android:layout_marginTop">@dimen/SeizeDP</item>
+    </style>
+
+    <style name="FicheContainer" parent="BaseCard">
+        <item name="android:elevation">@dimen/TroisDP</item>
+        <item name="android:padding">@dimen/VingtQuatreDP</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/VingtQuatreDP</item>
+    </style>
+
+    <style name="CardUserFiche" parent="FicheContainer" />
+
+    <style name="LoginLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/QuinzeSP</item>
+        <item name="android:textColor">@color/noir</item>
+    </style>
+
+    <style name="LoginEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/CinquanteDP</item>
+        <item name="android:textSize">@dimen/QuinzeSP</item>
+    </style>
+
+    <style name="MultiLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">top|start</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textSize">@dimen/QuinzeSP</item>
+    </style>
+
+    <style name="MultiLineInput" parent="MultiLine">
+        <item name="android:minLines">12</item>
+        <item name="android:maxLines">12</item>
+        <item name="android:maxLength">500</item>
+    </style>
+
+    <style name="PrimaryButton" parent="BaseButton">
+        <item name="android:layout_marginTop">@dimen/VingtQuatreDP</item>
+    </style>
+
+    <style name="MainButton" parent="BaseButton">
+        <item name="android:layout_marginTop">@dimen/SeizeDP</item>
+    </style>
+
+    <style name="MenuButton" parent="BaseButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/SeizeDP</item>
+        <item name="android:layout_marginTop">@dimen/SeizeDP</item>
+    </style>
+
+    <style name="MainButton.Logout">
+        <item name="android:backgroundTint">@color/rouge</item>
+        <item name="android:textColor">@color/blanc</item>
+        <item name="android:layout_marginTop">@dimen/QuarenteDP</item>
+    </style>
+
+    <style name="FicheRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingVertical">@dimen/HuitDP</item>
+    </style>
+
+    <style name="FicheLabel">
+        <item name="android:layout_width">@dimen/CentDP</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/QuinzeSP</item>
+        <item name="android:textColor">@color/noir</item>
+    </style>
+
+    <style name="FicheValue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/DouzeDP</item>
+        <item name="android:textSize">@dimen/QuinzeSP</item>
+    </style>
+
+    <style name="RowUserFiche" parent="FicheRow" />
+    <style name="LabelUserFiche" parent="FicheLabel" />
+    <style name="ValueUserFiche" parent="FicheValue" />
+
+    <style name="MainListView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">@dimen/HuitDP</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingBottom">@dimen/VingtQuatreDP</item>
+        <item name="android:layout_marginTop">@dimen/VingtQuatreDP</item>
+    </style>
+
+    <style name="ListItemDemande">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/SeizeDP</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="ListItemText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/SeizeSP</item>
+        <item name="android:textColor">@color/gris</item>
+    </style>
+
+    <style name="ListItemStatus">
+        <item name="android:layout_width">@dimen/VingtDP</item>
+        <item name="android:layout_height">@dimen/VingtDP</item>
+        <item name="android:layout_marginStart">@dimen/SeizeDP</item>
+        <item name="android:background">@android:drawable/presence_online</item>
+    </style>
+
+    <style name="HeaderUser">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/TrenteDeuxDP</item>
+    </style>
+
+    <style name="WelcomeText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/SeizeDP</item>
+        <item name="android:textSize">@dimen/QuinzeSP</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/noir</item>
+    </style>
+
+</resources>

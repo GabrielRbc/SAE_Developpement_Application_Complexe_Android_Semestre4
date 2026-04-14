@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fond">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/VingtQuatreDP"
+        android:paddingTop="@dimen/QuatreVingtDP">
+
+        <LinearLayout
+            android:id="@+id/loginCard"
+            style="@style/LoginCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_constraintWidth_max="@dimen/CinqCentDP">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/connexion"
+                android:textSize="@dimen/VingtCinqSP"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/VingtQuatreDP"
+                android:textColor="@color/noir"/>
+
+            <TextView
+                style="@style/LoginLabel"
+                android:text="@string/UserID" />
+
+            <EditText
+                android:id="@+id/userID"
+                style="@style/LoginEditText"
+                android:autofillHints=""
+                android:inputType="text"
+                android:maxLength="20"
+                android:hint="@string/HintID" />
+
+            <TextView
+                style="@style/LoginLabel"
+                android:layout_marginTop="@dimen/SeizeDP"
+                android:text="@string/UserPassword" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/LoginEditText"
+                android:autofillHints=""
+                android:inputType="textPassword"
+                android:maxLength="255"
+                android:hint="@string/HintPassword" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/SoixanteDP"
+                android:layout_marginTop="@dimen/VingtQuatreDP"
+                android:text="@string/connexion"
+                android:onClick="onClicConnexion" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/VingtQuatreDP"
+            android:text="@string/accesSite"
+            android:textColor="@color/bleu"
+            android:textSize="@dimen/QuinzeSP"
+            app:layout_constraintTop_toBottomOf="@id/loginCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="onClicLienInternet" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

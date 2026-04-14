@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fond"
+    tools:context=".activitees.DemandePredefiniesActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitreDemande"
+            style="@style/PageTitle"
+            android:layout_marginTop="@dimen/VingtQuatreDP"
+            android:text="@string/titreDemandeP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <FrameLayout
+            android:id="@+id/containerSpinner"
+            style="@style/AppCard"
+            android:padding="@dimen/QuatreDP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitreDemande"
+            app:layout_constraintWidth_max="@dimen/CinqCentDP"
+            app:layout_constraintWidth_percent="0.8">
+
+            <Spinner
+                android:id="@+id/listeDeroulante"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/QuarenteHuitDP"
+                android:gravity="center"
+                android:textAlignment="center" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvLabelExpliquez"
+            style="@style/PageTitle"
+            android:layout_marginTop="@dimen/TrenteDeuxDP"
+            android:text="@string/expliquez_nous_votre_demande"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerSpinner"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <LinearLayout
+            android:id="@+id/containerMessage"
+            style="@style/AppCard"
+            android:padding="@dimen/DouzeDP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelExpliquez"
+            app:layout_constraintWidth_max="@dimen/SeptCentCinquanteDP"
+            app:layout_constraintWidth_percent="0.9">
+
+            <EditText
+                android:id="@+id/textDemande"
+                style="@style/MultiLine"
+                android:minLines="10"
+                android:maxLines="10"
+                android:maxLength="500"
+                android:hint="@string/textMultiligne" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEnvoyer"
+            style="@style/PrimaryButton"
+            android:layout_marginTop="@dimen/TrenteDeuxDP"
+            android:onClick="clicEnvoyerDemande"
+            android:text="@string/envoyerDemande"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerMessage"
+            app:layout_constraintWidth_max="@dimen/QuatreCentCinquanteDP"
+            app:layout_constraintWidth_percent="0.7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

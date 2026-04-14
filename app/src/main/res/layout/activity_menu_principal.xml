@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fond"
+    tools:context=".activitees.MenuPrincipalActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/headerUser"
+            style="@style/HeaderUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="@dimen/SixCentDP"
+            app:layout_constraintWidth_percent="0.9">
+
+            <ImageView
+                android:layout_width="@dimen/QuatreVingtDP"
+                android:layout_height="@dimen/QuatreVingtDP"
+                android:src="@drawable/user"
+                android:contentDescription="@string/image"/>
+
+            <TextView
+                android:id="@+id/texteBienvenue"
+                style="@style/WelcomeText" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvChoix"
+            style="@style/MenuInstruction"
+            android:layout_marginTop="@dimen/TrenteDeuxDP"
+            android:text="@string/choixPrincipal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerUser"
+            app:layout_constraintWidth_percent="0.85" />
+
+        <Button
+            android:id="@+id/btnFiche"
+            style="@style/MainButton"
+            android:layout_marginTop="@dimen/TrenteDeuxDP"
+            android:onClick="onClicFiche"
+            android:text="@string/boutonFiche"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvChoix"
+            app:layout_constraintWidth_max="@dimen/QuatreCentCinquanteDP"
+            app:layout_constraintWidth_percent="0.75" />
+
+        <Button
+            android:id="@+id/btnDemande"
+            style="@style/MainButton"
+            android:onClick="onClicDemande"
+            android:text="@string/boutonDemande"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnFiche"
+            app:layout_constraintWidth_max="@dimen/QuatreCentCinquanteDP"
+            app:layout_constraintWidth_percent="0.75" />
+
+        <Button
+            android:id="@+id/btnConsulter"
+            style="@style/MainButton"
+            android:onClick="onClicConsulter"
+            android:text="@string/boutonConsulter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnDemande"
+            app:layout_constraintWidth_max="@dimen/QuatreCentCinquanteDP"
+            app:layout_constraintWidth_percent="0.75" />
+
+        <Button
+            android:id="@+id/btnDeconnexion"
+            style="@style/MainButton.Logout"
+            android:onClick="onClicDeconnexion"
+            android:text="@string/boutonDeconnexion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnConsulter"
+            app:layout_constraintWidth_max="@dimen/QuatreCentCinquanteDP"
+            app:layout_constraintWidth_percent="0.75" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

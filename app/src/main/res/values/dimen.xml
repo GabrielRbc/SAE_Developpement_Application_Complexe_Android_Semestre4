@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nouvelles dimensions DP -->
+
+    <dimen name="DeuxDP">2dp</dimen>
+    <dimen name="TroisDP">3dp</dimen>
+    <dimen name="QuatreDP">4dp</dimen>
+    <dimen name="HuitDP">8dp</dimen>
+
+    <dimen name="DixDP">10dp</dimen>
+    <dimen name="DouzeDP">12dp</dimen>
+    <dimen name="QuinzeDP">15dp</dimen>
+    <dimen name="SeizeDP">16dp</dimen>
+
+    <dimen name="VingtDP">20dp</dimen>
+    <dimen name="VingtQuatreDP">24dp</dimen>
+
+    <dimen name="TrenteDP">30dp</dimen>
+    <dimen name="TrenteDeuxDP">32dp</dimen>
+
+    <dimen name="QuarenteDP">40dp</dimen>
+    <dimen name="QuarenteHuitDP">48dp</dimen>
+
+    <dimen name="CinquanteDP">50dp</dimen>
+
+    <dimen name="SoixanteDP">60dp</dimen>
+
+    <dimen name="QuatreVingtDP">80dp</dimen>
+
+    <dimen name="CentDP">100dp</dimen>
+
+    <dimen name="CentVingtDP">120dp</dimen>
+
+    <dimen name="QuatreCentDP">400dp</dimen>
+    <dimen name="QuatreCentCinquanteDP">450dp</dimen>
+
+    <dimen name="CinqCentDP">500dp</dimen>
+    <dimen name="SixCentDP">600dp</dimen>
+
+    <dimen name="SeptCentDP">700dp</dimen>
+    <dimen name="SeptCentCinquanteDP">750dp</dimen>
+
+    <dimen name="HuitCentDP">800dp</dimen>
+
+    <!-- Nouvelles dimensions SP -->
+
+    <dimen name="QuinzeSP">15sp</dimen>
+    <dimen name="SeizeSP">16sp</dimen>
+
+    <dimen name="VingtQuatreSP">24sp</dimen>
+    <dimen name="VingtCinqSP">25sp</dimen>
+
+</resources>

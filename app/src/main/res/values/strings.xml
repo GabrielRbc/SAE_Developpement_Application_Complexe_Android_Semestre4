@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Page de connexion -->
+    <string name="app_name">DEMANDROID</string>
+    <string name="connexion">Connexion</string>
+    <string name="UserID">Nom d\'utilisateur : </string>
+    <string name="UserPassword">Mot de passe : </string>
+    <string name="HintID">Votre identifiant</string>
+    <string name="HintPassword">Votre mot de passe</string>
+
+    <string name="accesSite"><u>Pour accéder au site, cliqué ici</u></string>
+
+    <!-- Menu principal -->
+    <string name="bienvenue">Bienvenue %1$s %2$s\n(%3$s)</string>
+    <string name="choixPrincipal">Que voulez-vous faire ?</string>
+    <string name="boutonFiche">Consulter ma fiche</string>
+    <string name="boutonDemande">Faire une demande</string>
+    <string name="boutonAttestation">Mon attestation</string>
+    <string name="boutonDeconnexion">Déconnexion</string>
+    <string name="image">Image user</string>
+
+    <!-- Menu des demandes -->
+    <string name="titreDemande">Demandes</string>
+    <string name="boutonPredefinies">Demandes prédéfinies</string>
+    <string name="boutonLibrement">Nous contacter librement</string>
+    <string name="boutonConsulter">Consulter mes demandes</string>
+
+    <!-- Page fiche -->
+    <string name="titreFiche">Ma fiche</string>
+    <string name="nom">Nom :</string>
+    <string name="prenom">Prénom :</string>
+    <string name="mail">Mail :</string>
+    <string name="numero">Numéro</string>
+    <string name="role">Rôle :</string>
+
+    <!-- Page demande prédefinies -->
+    <string name="titreDemandeP">Quelle est votre demande ?</string>
+    <string name="expliquez_nous_votre_demande">Expliquez-nous votre demande.</string>
+    <string name="textMultiligne">Saisissez votre message ici</string>
+    <string name="envoyerDemande">Envoyer</string>
+
+    <!-- Page contact libre -->
+    <string name="titreContact">Vous pouvez échanger avec nous sur tous vos besoins, suggestions, plaintes et autres.</string>
+
+    <!-- Page consulter demande -->
+    <string name="titre_consulter">Mes demandes</string>
+
+    <!-- Page visualisation demande -->
+    <string name="titreMaDemande">Ma demande :</string>
+    <string name="idDemande">Identifiant :</string>
+    <string name="type">Type :</string>
+    <string name="contenu">Contenu :</string>
+    <string name="status">Status :</string>
+
+</resources>

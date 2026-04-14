@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListItemDemande">
+
+    <TextView
+        android:id="@+id/textNomDemande"
+        style="@style/ListItemText" />
+
+    <View
+        android:id="@+id/bulleStatut"
+        style="@style/ListItemStatus" />
+
+</LinearLayout>

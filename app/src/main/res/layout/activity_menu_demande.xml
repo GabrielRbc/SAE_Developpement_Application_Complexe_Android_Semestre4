@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fond"
+    tools:context=".activitees.MenuDemandeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitreDemande"
+            style="@style/MenuTitle"
+            android:text="@string/titreDemande"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <TextView
+            android:id="@+id/tvChoixPrincipal"
+            style="@style/MenuInstruction"
+            android:text="@string/choixPrincipal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitreDemande"
+            app:layout_constraintWidth_percent="0.85" />
+
+        <Button
+            android:id="@+id/btnPredefini"
+            style="@style/MenuButton"
+            android:layout_marginTop="@dimen/QuarenteHuitDP"
+            android:onClick="onClicPredefini"
+            android:text="@string/boutonPredefinies"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvChoixPrincipal"
+            app:layout_constraintWidth_max="@dimen/QuatreCentDP"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <Button
+            android:id="@+id/btnLibre"
+            style="@style/MenuButton"
+            android:onClick="onClicLibre"
+            android:text="@string/boutonLibrement"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnPredefini"
+            app:layout_constraintWidth_max="@dimen/QuatreCentDP"
+            app:layout_constraintWidth_percent="0.7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

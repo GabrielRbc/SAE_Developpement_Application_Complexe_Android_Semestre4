@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fond"
+    tools:context=".activitees.ContactLibreActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitreContact"
+            style="@style/PageTitle"
+            android:layout_marginTop="@dimen/SeizeDP"
+            android:text="@string/titreContact"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <LinearLayout
+            android:id="@+id/containerMessage"
+            style="@style/MessageCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitreContact"
+            app:layout_constraintWidth_max="@dimen/SeptCentDP"
+            app:layout_constraintWidth_percent="0.9">
+
+            <EditText
+                android:id="@+id/textDemande"
+                style="@style/MultiLineInput"
+                android:autofillHints=""
+                android:hint="@string/textMultiligne" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEnvoyer"
+            style="@style/PrimaryButton"
+            android:layout_marginBottom="@dimen/TrenteDeuxDP"
+            android:onClick="clicEnvoyerContact"
+            android:text="@string/envoyerDemande"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerMessage"
+            app:layout_constraintWidth_max="@dimen/QuatreCentDP"
+            app:layout_constraintWidth_percent="0.7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

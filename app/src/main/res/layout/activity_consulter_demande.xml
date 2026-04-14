@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    tools:context=".activitees.ConsulterDemandeActivity">
+
+    <TextView
+        android:id="@+id/tvTitreConsulter"
+        style="@style/PageTitle"
+        android:text="@string/titre_consulter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <FrameLayout
+        android:id="@+id/containerFiltre"
+        style="@style/FilterContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitreConsulter"
+        app:layout_constraintWidth_max="@dimen/CinqCentDP"
+        app:layout_constraintWidth_percent="0.8">
+
+        <Spinner
+            android:id="@+id/filtreDemande"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/QuarenteHuitDP"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listeDemande"
+        style="@style/MainListView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerFiltre"
+        app:layout_constraintWidth_max="@dimen/HuitCentDP"
+        app:layout_constraintWidth_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

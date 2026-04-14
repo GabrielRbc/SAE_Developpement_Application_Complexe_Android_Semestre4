@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fond"
+    tools:context=".activitees.FicheActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/TrenteDP">
+
+        <TextView
+            android:id="@+id/tvTitreFiche"
+            style="@style/PageTitle"
+            android:layout_marginTop="@dimen/TrenteDeuxDP"
+            android:text="@string/titreFiche"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <LinearLayout
+            android:id="@+id/containerFiche"
+            style="@style/CardUserFiche"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitreFiche"
+            app:layout_constraintWidth_max="@dimen/SixCentDP"
+            app:layout_constraintWidth_percent="0.85">
+
+            <LinearLayout style="@style/RowUserFiche">
+                <TextView style="@style/LabelUserFiche" android:text="@string/nom" />
+                <TextView android:id="@+id/idNom" style="@style/ValueUserFiche" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowUserFiche">
+                <TextView style="@style/LabelUserFiche" android:text="@string/prenom" />
+                <TextView android:id="@+id/idPrenom" style="@style/ValueUserFiche" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowUserFiche">
+                <TextView style="@style/LabelUserFiche" android:text="@string/mail" />
+                <TextView android:id="@+id/idMail" style="@style/ValueUserFiche" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowUserFiche">
+                <TextView style="@style/LabelUserFiche" android:text="@string/numero" />
+                <TextView android:id="@+id/idNumero" style="@style/ValueUserFiche" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RowUserFiche">
+                <TextView style="@style/LabelUserFiche" android:text="@string/role" />
+                <TextView android:id="@+id/idRole" style="@style/ValueUserFiche" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fond"
+    tools:context=".activitees.DemandeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/TrenteDP">
+
+        <TextView
+            android:id="@+id/tvTitreFiche"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/TrenteDeuxDP"
+            android:gravity="center"
+            android:text="@string/titreMaDemande"
+            android:textSize="@dimen/VingtCinqSP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <LinearLayout
+            android:id="@+id/containerFiche"
+            style="@style/FicheContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitreFiche"
+            app:layout_constraintWidth_max="@dimen/SixCentDP"
+            app:layout_constraintWidth_percent="0.85">
+
+            <LinearLayout style="@style/FicheRow">
+                <TextView style="@style/FicheLabel" android:text="@string/type" />
+                <TextView android:id="@+id/idType" style="@style/FicheValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FicheRow">
+                <TextView style="@style/FicheLabel" android:text="@string/status" />
+                <TextView android:id="@+id/idStatus" style="@style/FicheValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FicheRow">
+                <TextView style="@style/FicheLabel" android:text="@string/idDemande" />
+                <TextView android:id="@+id/identifiantDemande" style="@style/FicheValue" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FicheRow">
+                <TextView style="@style/FicheLabel" android:text="@string/contenu" />
+                <TextView android:id="@+id/idContenu" style="@style/FicheValue" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
